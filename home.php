@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JQuery Basic</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="jquery-ui/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="jquery-ui/jquery-ui.structure.css">
+    <link rel="stylesheet" type="text/css" href="jquery-ui/jquery-ui.theme.css">
 </head>
 
 <style type="text/css">
@@ -112,6 +115,8 @@
         <button class="clickClass up" id="idClick">Click me Up</button>
         <button class="clickClass down" id="idClick">Click me Down</button>
     </body>
+
+    <script type="text/javascript" src="jquery-ui/jquery-ui.js"></script>
 
     <script>
         $(document).ready(function(){
