@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <h2>JavaScript HTML Events</h2>
+    <h2 onclick="this.innerHTML='Ooops!'">Click on this text!</h2>
+
+    Enter your name: <input type="text" id="fname" onchange="upperCase()">
+
+    <div onmouseover="mOver(this)" onmouseout="mOut(this)"
+        style="background-color:#D94A38;width:120px;height:20px;padding:40px;">
+        Mouse Over Me
+    </div>
+
+    <div onmousedown="mDown(this)" onmouseup="mUp(this)"
+        style="background-color:#D94A38;width:90px;height:20px;padding:40px;">
+        Click Me
+    </div>
+
+</body>
+
+<script>
+    function upperCase() {
+        const x = document.getElementById("fname");
+        x.value = x.value.toUpperCase();
+    }
+
+    function mOver(obj) {
+        obj.innerHTML = "Thank You"
+        obj.style.backgroundColor = "#1ec5e5";
+    }
+
+    function mOut(obj) {
+        obj.innerHTML = "Mouse Over Me"
+    }
+
+
+    function mDown(obj) {
+        obj.style.backgroundColor = "#1ec5e5";
+        obj.innerHTML = "Release Me";
+    }
+
+    function mUp(obj) {
+        obj.style.backgroundColor = "#D94A38";
+        obj.innerHTML = "Thank You";
+    }
+
+</script>
+
+</html>
